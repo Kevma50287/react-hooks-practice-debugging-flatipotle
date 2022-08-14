@@ -21,10 +21,15 @@ function SideForm(props) {
               type="checkbox"
               value="Chips"
               name="sides"
-              checked={props.sides.includes("Chips")}
+              defaultChecked={props.sides.includes("Chips")}
               onChange={props.handleChange}
             />
-            <img src={chips} height="100px" width="100px" alt="chips" />
+            <img
+              src={chips}
+              height="100px"
+              width="100px"
+              alt="chips"
+            />
             <label htmlFor="chips">Chips</label>
           </div>
         </div>
@@ -36,7 +41,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Salsa"
               name="sides"
-              checked={props.sides.includes("Chips & Salsa")}
+              defaultChecked={props.sides.includes("Chips & Salsa")}
               onChange={props.handleChange}
             />
             <img
@@ -56,7 +61,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Guac"
               name="sides"
-              checked={props.sides.includes("Chips & Guac")}
+              defaultChecked={props.sides.includes("Chips & Guac")}
               onChange={props.handleChange}
             />
             <img
@@ -76,7 +81,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Queso"
               name="sides"
-              checked={props.sides.includes("Chips & Queso")}
+              defaultChecked={props.sides.includes("Chips & Queso")}
               onChange={props.handleChange}
             />
             <img
@@ -96,10 +101,15 @@ function SideForm(props) {
               type="checkbox"
               value="Tortilla"
               name="sides"
-              checked={props.sides.includes("Tortilla")}
+              defaultChecked={props.sides.includes("Tortilla")}
               onChange={props.handleChange}
             />
-            <img src={tortilla} height="100px" width="100px" alt="tortilla" />
+            <img
+              src={tortilla}
+              height="100px"
+              width="100px"
+              alt="tortilla"
+            />
             <label htmlFor="tortila">Tortilla</label>
           </div>
         </div>
@@ -111,10 +121,15 @@ function SideForm(props) {
               type="checkbox"
               value="Taco"
               name="sides"
-              checked={props.sides.includes("Taco")}
+              defaultChecked={props.sides.includes("Taco")}
               onChange={props.handleChange}
             />
-            <img src={taco} height="100px" width="100px" alt="taco" />
+            <img
+              src={taco}
+              height="100px"
+              width="100px"
+              alt="taco"
+            />
             <label htmlFor="taco">Taco</label>
           </div>
         </div>
@@ -126,7 +141,7 @@ function SideForm(props) {
               type="checkbox"
               value="Fountain Drink"
               name="sides"
-              checked={props.sides.includes("Fountain Drink")}
+              defaultChecked={props.sides.includes("Fountain Drink")}
               onChange={props.handleChange}
             />
             <img
@@ -142,3 +157,5 @@ function SideForm(props) {
     </>
   );
 }
+
+export default SideForm
